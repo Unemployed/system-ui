@@ -1,0 +1,12 @@
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation-name: blink;
+  animation-duration: 4s;
+  animation-timing-function: steps(1);
+  animation-iteration-count: infinite;
+}

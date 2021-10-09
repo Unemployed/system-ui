@@ -1,0 +1,15 @@
+.pane {
+    padding: 0.5rem;
+  
+    &.pane--primary {
+      flex-grow: 1;
+    }
+  
+    &.pane--half {
+      flex-basis: 50%;
+    }
+  
+    &.pane--mini {
+      flex-basis: 40%;
+    }
+  }

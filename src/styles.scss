@@ -1,0 +1,21 @@
+@import "./reset";
+@import "./variables";
+@import "./animations";
+@import "./container";
+@import "./pane";
+@import "./window";
+@import "./hover.scss";
+
+html {
+  font-size: $font-size-root;
+  font-family: monospace;
+  color: $color-light-200;
+}
+
+body {
+  background-color: $color-dark-200;
+}
+
+p + * {
+  margin-top: 1rem;
+}

@@ -1,0 +1,51 @@
+.window {
+  outline: $system-border;
+  box-shadow: 2px 2px 1px 1px $color-dark-100;
+}
+
+.window + * {
+  margin-top: 1rem;
+}
+
+.window-title {
+  border-bottom: $system-border;
+  text-align: center;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  user-select: none;
+  position: relative;
+}
+
+.window.window--closable .window-title::after {
+  content: "x";
+  position: absolute;
+  right: 0;
+  border-left: $system-border;
+  width: 3rem;
+  text-align: center;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  pointer-events: initial;
+}
+
+.window.window--closable .window-title:hover::after {
+  background-color: $color-dark-100;
+}
+.window-content {
+  padding: 1.5rem 3rem;
+}
+
+.window-content--split {
+  display: flex;
+  align-items: center;
+}
+
+.window-content--split > * {
+  flex-basis: 50%;
+}
