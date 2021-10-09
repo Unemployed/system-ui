@@ -1,0 +1,40 @@
+form button {
+  float: right;
+}
+
+label {
+  font-size: 0.68rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+label + * {
+  margin-top: 1rem;
+}
+
+label input {
+  margin-left: 1rem;
+}
+
+// TODO: Support inline label display when using input as adjacent.
+label + input {
+  margin-top: 0;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid $color-light-200;
+  background-color: transparent;
+  font-size: 0.68rem;
+  color: $color-light-200;
+  caret-color: $color-light-200;
+  font-family: monospace;
+  letter-spacing: 0.0125rem;
+  line-height: 1rem;
+  padding-left: .2083rem;
+}
+
+input:focus-visible {
+  outline: none;
+}
