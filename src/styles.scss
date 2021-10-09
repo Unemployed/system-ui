@@ -4,7 +4,9 @@
 @import "./container";
 @import "./pane";
 @import "./window";
-@import "./hover.scss";
+@import "./hover";
+@import "./button";
+@import "./layout";
 
 html {
   font-size: $font-size-root;
