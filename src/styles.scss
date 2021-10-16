@@ -27,5 +27,5 @@ p + * {
 p:last-of-type:after {
   content: '';
   border-right: .5ch solid $color-light-200;
-  animation: blink 2s steps(1) infinite;
+  animation: blink 3s steps(1) infinite;
 }
