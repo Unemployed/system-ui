@@ -1,8 +1,14 @@
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  label span {
+    flex-shrink: 0;
+  }
+  input {
+    flex-shrink: 1;
+  }
 }
 
-form button[type=submit] {
-    align-self: flex-end;
+form button[type="submit"] {
+  align-self: flex-end;
 }
