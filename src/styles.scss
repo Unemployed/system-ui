@@ -30,3 +30,8 @@ p:last-of-type:after {
   border-right: .5ch solid $color-light-200;
   animation: blink 3s steps(1) infinite;
 }
+
+a, a:active {
+  color: cornflowerblue;
+  text-decoration: underline cornflowerblue;
+}
