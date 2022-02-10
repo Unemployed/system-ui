@@ -1,6 +1,5 @@
 .window {
   outline: $system-border;
-  box-shadow: 2px 2px 1px 1px $color-dark-100;
 }
 
 .window + * {
@@ -38,14 +37,21 @@
   background-color: $color-dark-100;
 }
 .window-content {
-  padding: 1.5rem 3rem;
+  @media (min-width: 50rem) {
+    padding: 1.5rem;
+  }
+
+  padding: 1rem;
 }
 
 .window-content--split {
-  display: flex;
   align-items: center;
+  column-gap: 1rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 .window-content--split > * {
-  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
 }
